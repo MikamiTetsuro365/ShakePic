@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>ShakePic</title>
+<meta name="keywords" content="画像強調ツイート,Twitter,画像投稿,画像ジェネレータ,ツイート" />
+<meta name="description" content="Twitterへ画像を強調してツイートします." />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+function filesizeChecker(id){
+	
+	var size = document.getElementById(id).files[0].size;
+	
+	var KBsize = size/1024;
+	
+	if(size <=  512000)
+	{
+		
+		}else{
+	
+		alert("ファイルサイズは"+ KBsize.toFixed(2) + "KBです。\nファイルサイズオーバーです, 作成できません." );
+		document.form.my_img.value="";
+	}
+	
+	}
+
+</script>
+
+</head>
+
+<body>
+<div id="content">
+<div align="left">
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://sima-tetteke.sakura.ne.jp/generator/shakePic/main.html" data-text="画像強調ツイート" data-via="sima_tetteke" data-lang="ja" data-size="large" data-hashtags="画像強調ツイート">ツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+<h1>画像強調ツイート</h1>
+<p align="center"></p>
+    
+<div class="img" align="center"><img src="img/sample.gif" width="480px" height="290px"></div> 
+<p></p>
+
+
+<div align="center">
+<form action="php/shakePic.php" method="post" enctype="multipart/form-data" name="form">
+	<p>ファイル選択：<input name="my_img" type="file" id="my_img"    maxlength="7"  onchange="filesizeChecker(this.id)"/> </p>
+	<p><input   type="submit"   value="画像をアップロード"  ></p>
+</form>
+
+</div>
+
+<ul>
+<li>上記の画像のように画像を強調(振動)させてツイートします.</li>
+<li>少々, 時間がかかります.</li>
+<li>画像形式は<font color="red">.png</font>, <font color="red">.jpg</font>, <font color="red">.gif</font>に対応.<font color="red">ファイルサイズは500kB</font>まででお願いします.</li>
+</ul>
+
+
+</div>
+<div id="copy"></div>
+</body>
+</html>

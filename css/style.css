@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	
+	}
+
+h1{
+	
+	font-weight:normal;
+	font-size:20px;	
+	border-left:20px solid #4169e1;
+	background-color:#ededed;
+	color:#000;
+	padding-left:10px;
+	margin: 10px 0px 10px 0px;
+	line-height: 1.5em;
+	
+	
+	}
+	
+
+
+#content
+{
+	width:750px;
+	height:750px;
+	margin:auto;
+	border:dotted 1px;
+	
+	
+	}
+	
+#content2
+{
+	width:750px;
+	
+	margin:auto;
+	border:dotted 1px;
+	
+	
+	}	
+
+ul{
+padding: 0px 0px 0px 75px;
+}
+
+#copy{
+	
+	width:752px;
+	height:20px;
+	background-color:#000;
+	color:#FFF;
+	margin: auto;
+	
+	}
+
+input {
+	
+	font-size:150%;
+	
+	}
+	
+#locatedpoint {
+
+	display: none;
+	cursor: default;
+	position: absolute;
+	overflow: hidden;
+}
+
+
+
+
+
+
+#string{
+
+	width:750;
+	
+	
+}
+
+#string p{
+	
+	margin:0;
+	text-indent:1em;
+	padding:5px 20px 10px 20px;	
+	line-height:130%;
+	
+}
+
+#stringtitle{
+	
+	line-height:35px;
+	font-size:large;
+	text-indent:3em;
+	font-weight:bold;
+	color:white;
+	height:35px;
+	background:url(../img/bana.png);
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
